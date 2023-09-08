@@ -17,10 +17,10 @@ export const DivImageHanger = styled.div`
 export const ImgHangerContainer = styled.img`
     background-color: blue; 
 `
-export const ButtonCreateAccount = styled.button`
-    background: none;
-    border: none;
+// export const ButtonCreateAccount = styled.button`
+//     background: none;
+//     border: none;
 
-    color: #00166A;
-    font-weight: bolder;
-`
+//     color: #00166A;
+//     font-weight: bolder;
+// `
