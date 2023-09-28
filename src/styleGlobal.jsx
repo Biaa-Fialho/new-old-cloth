@@ -1,15 +1,11 @@
 import { createGlobalStyle } from "styled-components" ;
 
-export default createGlobalStyle`
+export const StyleGlobal = createGlobalStyle`
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bona Nova', serif, 100vh;
+    font-family: 'Bona Nova', serif;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
 `

@@ -9,9 +9,9 @@ function Rotas(){
         <BrowserRouter>
             <Routes>
                 <Route index element={<FirstPage/>}/>
-                <Route path='/login' element={<LoginScreen/>}/>
-                <Route path='/cadastro' element={<RegisterScreen/>}/>
-                <Route path='/select' element={<SelectPage/>}/>
+                <Route path='login' element={<LoginScreen/>}/>
+                <Route path="cadastro" element={<RegisterScreen/>}/>
+                {/* <Route path='select' element={<SelectPage/>}/> */}
 
             </Routes>
         </BrowserRouter>

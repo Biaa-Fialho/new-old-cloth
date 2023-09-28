@@ -2,11 +2,16 @@ import styled from "styled-components" ;
 
 export const MainLogin = styled.div`
     display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content:center; */
     // grid-template-columns: 50vw 50vw;
     // grid-template-rows: 100vh;
     // grid-template-areas: "DivForm ";
-    font-family: 'Bona Nova', serif, 100vh;
+    font-family: 'Bona Nova', serif;
     background-color: #faf9f6;
+    margin-top: -10vh;
+
 `
 
 export const Form01 = styled.form`
@@ -14,7 +19,7 @@ export const Form01 = styled.form`
     height: 40vh;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
 `
 
 export const LabelPassword = styled.label`
@@ -48,7 +53,7 @@ export const LabelPasswordConfirm = styled.label`
     color: #797c7b;
 `
 
-export const InputPasswordConfirm = styled.input`
+export const input02 = styled.input`
     font-size: large;
 
     display: flex;
@@ -73,7 +78,7 @@ export const LabelContainer = styled.label`
     margin-left: 20px;
 `
 
-export const InputLabelContainer = styled.input`
+export const input = styled.input`
     font-size: large;
 
     display: flex;
@@ -125,7 +130,7 @@ export const TitleContainer = styled.h1`
     margin-bottom: 10px;
 `
 
-export const ButtonLogin = styled.input`
+export const ButtonLogin = styled.button`
     color: white;
     font-size: large;
 

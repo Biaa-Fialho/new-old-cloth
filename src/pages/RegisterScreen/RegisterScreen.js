@@ -1,40 +1,40 @@
-import { InputPassword } from '../LoginScreen/style'
-import { MainLogin, DivForm, DivContentForm, LabelPassword, TitleContainer, ButtonLogin, Form01, LabelContainer, LabelPasswordConfirm, InputLabelContainer, InputPasswordRegister, InputPasswordConfirm} from './style'
-import  { useNavigate } from "react-router-dom"
+import HeaderGeneral from '../../components/Header/Header'
+import { MainLogin, TitleContainer, ButtonLogin, Form01, LabelContainer, LabelPasswordConfirm, DivForm, DivContentForm } from './style'
+import { useNavigate } from "react-router-dom"
 
-function LoginScreen() {
+function RegisterScreen() {
     const navigate = useNavigate()
 
-    const goToSelect = () =>{
-        navigate('/Select')
-    }
 
     return (
-        <MainLogin>
-            <DivForm>
+        <>
+            <HeaderGeneral/>
+
+            <MainLogin>
+                <DivForm>
                 <DivContentForm>
-                    <TitleContainer>Faça seu cadastro no New Old Cloth </TitleContainer>
-                    <Form01> 
-                        <LabelContainer>Insira seu email
-                            <InputLabelContainer placeholder='' required/>
-                        </LabelContainer>
+                <TitleContainer>Faça seu cadastro no New Old Cloth </TitleContainer>
+                
+                <Form01>
+                    <LabelContainer>Insira seu email</LabelContainer>
+                    <input placeholder='' />
 
-                        <LabelPassword>Insira sua senha
-                            <InputPasswordRegister placeholder='' required/>
-                        </LabelPassword>
+                    <LabelContainer>Insira sua senha</LabelContainer>
+                    <input placeholder='' />
 
-                        <LabelPasswordConfirm>Confirme sua senha
-                            <InputPasswordConfirm placeholder='' required/>
-                        </LabelPasswordConfirm>
+                    <LabelPasswordConfirm>Confirme sua senha</LabelPasswordConfirm>
+                    <input placeholder='' />
 
-                        <ButtonLogin onClick={goToSelect}>Entrar</ButtonLogin>
-                    </Form01>
+                    <ButtonLogin onClick={() => navigate('/select')}>Entrar</ButtonLogin>
+                </Form01>
+
                 </DivContentForm>
-            </DivForm>
-        </MainLogin>
+                </DivForm>
+            </MainLogin>
+        </>
     )
 }
 
-export default LoginScreen
+export default RegisterScreen
 
 
