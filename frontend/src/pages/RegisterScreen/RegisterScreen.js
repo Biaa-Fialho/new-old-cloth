@@ -1,5 +1,5 @@
 import HeaderGeneral from '../../components/Header/Header'
-import { MainLogin, TitleContainer, ButtonLogin, Form01, LabelContainer, LabelPasswordConfirm, DivForm, DivContentForm } from './style'
+import { MainLogin, TitleContainer, ButtonLogin, Form01, LabelContainer, LabelPasswordConfirm, DivForm, DivContentForm, Input1 } from './style'
 import { useNavigate } from "react-router-dom"
 
 function RegisterScreen() {
@@ -8,7 +8,7 @@ function RegisterScreen() {
 
     return (
         <>
-            <HeaderGeneral/>
+            <HeaderGeneral  onClick={()=>navigate('/login')}/>
 
             <MainLogin>
                 <DivForm>
@@ -17,13 +17,13 @@ function RegisterScreen() {
                 
                 <Form01>
                     <LabelContainer>Insira seu email</LabelContainer>
-                    <input placeholder='' />
+                    <Input1 placeholder='' />
 
                     <LabelContainer>Insira sua senha</LabelContainer>
-                    <input placeholder='' />
+                    <Input1 placeholder='' />
 
                     <LabelPasswordConfirm>Confirme sua senha</LabelPasswordConfirm>
-                    <input placeholder='' />
+                    <Input1 placeholder='' />
 
                     <ButtonLogin onClick={() => navigate('/select')}>Entrar</ButtonLogin>
                 </Form01>

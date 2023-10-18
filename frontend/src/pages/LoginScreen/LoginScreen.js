@@ -11,7 +11,11 @@ function LoginScreen() {
 
 
     return (
-        <MainLogin>
+        <>
+
+            <HeaderGeneral onClick={()=>navigate(-1)}/>
+
+            <MainLogin>
             <DivForm>
                 <DivContentForm>
                     <TitleContainer> Faça seu login no New Old Cloth </TitleContainer>
@@ -20,6 +24,9 @@ function LoginScreen() {
                             <InputEmail placeholder='' required/>
                         </LabelContainer>
                         <LabelPassword>Insira sua senha
+                            <InputPassword placeholder='' required/>
+                        </LabelPassword>
+                        <LabelPassword>Confirme sua senha
                             <InputPassword placeholder='' required/>
                         </LabelPassword>
 
@@ -32,6 +39,8 @@ function LoginScreen() {
                 </DivContentForm>
             </DivForm>
         </MainLogin>
+        </>
+        
     )
 }
 

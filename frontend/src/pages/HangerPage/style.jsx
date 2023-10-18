@@ -8,8 +8,8 @@ export const DivGeral = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 87vw;
-    height: 85vh;
+    width: 100vw;
+    height: 100vh;
 `
 
 export const DivImageHanger = styled.div`
