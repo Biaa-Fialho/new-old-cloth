@@ -8,6 +8,8 @@ export const MainLogin = styled.div`
     font-family: 'Bona Nova', serif, 100vh;
     background-color: #faf9f6;
     margin-top: -7vh;
+    width: 100vw;
+    height: 100vh;
 `
 
 export const Form01 = styled.form`

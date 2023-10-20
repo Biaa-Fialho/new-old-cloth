@@ -3,15 +3,16 @@ import styled from "styled-components" ;
 export const MainLogin = styled.div`
     display: flex;
     /* flex-direction: column;
-    align-items: center;
-    justify-content:center; */
+    align-items: left;
+    justify-content:left; */
     // grid-template-columns: 50vw 50vw;
     // grid-template-rows: 100vh;
     // grid-template-areas: "DivForm ";
     font-family: 'Bona Nova', serif;
     background-color: #faf9f6;
-    margin-top: -10vh;
-
+    margin-top: -6vh;
+    width: 100vw;
+    height: 100vh;
 `
 
 export const Form01 = styled.form`

@@ -6,13 +6,15 @@ import EnterPage from "./pages/EnterPage/EnterPage"
 
 import Rotas from "./Rotes/Rotes";
 import {StyleGlobal} from "./styleGlobal";
+import Home from "./pages/Home/Home";
+import PublishHome from "./components/PublishHome/PublishHome";
 
 function App() {
   return (
     <>
       <StyleGlobal/>
-      <Rotas/> 
-      {/* <EnterPage/> */}
+      {/* <Rotas/>  */}
+      <Home/>
     </>
   );
 }

@@ -5,7 +5,7 @@ export const StyleGlobal = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bona Nova', serif;
+    /* font-family: 'Bona Nova', serif; */
 }
 
 `
