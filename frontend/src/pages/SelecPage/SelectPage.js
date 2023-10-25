@@ -1,11 +1,11 @@
-import HeaderGeneral from "../../components/Header/Header"
+import HeaderSeta from "../../components/Header/HeaderSeta"
 import {DivFontTitle, DivTextSelect, SelectButton, SingleButton} from "./style"
 
 
 function SelectPage(){
     return(
         <>
-            <HeaderGeneral/>
+            <HeaderSeta/>
 
             <containerGeralButton> 
                 

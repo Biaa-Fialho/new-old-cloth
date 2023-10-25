@@ -1,4 +1,5 @@
-import HeaderGeneral from '../../components/Header/Header'
+
+import HeaderSeta from '../../components/Header/HeaderSeta'
 import { MainLogin, TitleContainer, ButtonLogin, Form01, LabelContainer, LabelPasswordConfirm, DivForm, DivContentForm, Input1 } from './style'
 import { useNavigate } from "react-router-dom"
 
@@ -8,7 +9,7 @@ function RegisterScreen() {
 
     return (
         <>
-            <HeaderGeneral  onClick={()=>navigate('/login')}/>
+            <HeaderSeta/>
 
             <MainLogin>
                 <DivForm>

@@ -93,3 +93,4 @@ export const DivTextLegend = styled.div`
     font-size: 12px;
     padding-left: 1vw;
 `
+

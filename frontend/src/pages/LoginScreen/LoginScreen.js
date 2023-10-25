@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { MainLogin, DivForm, DivContentForm, LabelPassword, TitleContainer, ButtonLogin, Form01, LabelContainer, DivDontHaveAccount, ButtonCreateAccount, InputEmail, InputPassword} from './style'
-import HeaderGeneral from '../../components/Header/Header'
+import HeaderGeneral from '../../components/Header/HeaderSeta'
 // import LoginHeader from '../../components/LoginHeader/LoginHeader'
 // import InputLogin from '../../components/InputLogin/InputLogin'
 
@@ -13,7 +13,9 @@ function LoginScreen() {
     return (
         <>
 
-            <HeaderGeneral onClick={()=>navigate(-1)}/>
+            <HeaderGeneral 
+           
+            />
 
             <MainLogin>
             <DivForm>
@@ -30,7 +32,7 @@ function LoginScreen() {
                             <InputPassword placeholder='' required/>
                         </LabelPassword>
 
-                        <ButtonLogin onClick={()=>navigate('/select')}>Entrar</ButtonLogin>
+                        <ButtonLogin onClick={()=>navigate('/home')}>Entrar</ButtonLogin>
                     </Form01>
                     <DivDontHaveAccount>
                         <p>Não possui cadastro?</p>

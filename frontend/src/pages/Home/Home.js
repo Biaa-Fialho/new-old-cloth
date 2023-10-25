@@ -1,17 +1,21 @@
 import { DivClara, DivHomeGeral, DivTextHeader } from "./style"
 import PublishHome from "../../components/PublishHome/PublishHome"
+import HeaderGeral from "../../components/Header/HeaderGeral"
 
-function Home(){
-    return(
-        <DivHomeGeral>
-            <DivTextHeader>Home</DivTextHeader>
+function Home() {
+    return (
+        <>
+            <HeaderGeral />
+
             <DivClara>
-                <PublishHome/>
-                {/* <PublishHome/> */}
-                {/* <PublishHome/> */}
+                <PublishHome />
+                <PublishHome />
+                <PublishHome />
                 {/* <PublishHome/> */}
             </DivClara>
-        </DivHomeGeral>
+
+        </>
+
     )
 }
 export default Home
