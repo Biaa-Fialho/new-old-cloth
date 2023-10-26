@@ -4,20 +4,27 @@ import LoginScreen from "../pages/LoginScreen/LoginScreen";
 import RegisterScreen from "../pages/RegisterScreen/RegisterScreen"
 import SelectPage from "../pages/SelecPage/SelectPage";
 import Home from "../pages/Home/Home";
+import Search from "../pages/Shearch/Search";
+import Publish from "../pages/Publish/Publish"
+import ChatHome from "../pages/ChatHome/ChatHome"
+import Account from "../pages/Account/Accont"
 
-function Rotas(){
+function RoutesFunction(){
     return(
         <BrowserRouter>
             <Routes>
                 <Route index element={<FirstPage/>}/>
-                <Route path='login' element={<LoginScreen/>}/>
+                {/* <Route path='login' element={<LoginScreen/>}/>
                 <Route path="cadastro" element={<RegisterScreen/>}/>
                 <Route path='select' element={<SelectPage/>}/>
                 <Route path="home" element={<Home/>}/>
-
+                <Route path="search" element={<Search/>}/>
+                <Route path="publish" element={<Publish/>}/>
+                <Route path="chatHome" element={<ChatHome/>}/>
+                <Route path="account" element={<Account/>}/> */}
             </Routes>
         </BrowserRouter>
     )
 }
 
-export default Rotas
+export default RoutesFunction

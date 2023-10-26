@@ -6,6 +6,23 @@ export const DivHeader = styled.div`
     align-items: flex-start;
     justify-content: space-between;
 `
+export const DivClaraPublish = styled.di`
+    background-color: #deffca;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vh;
+
+    width: 100vw;
+    /* height: 150vh; */
+
+    padding-top: 2vh;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+`
 
 export const ImgBoyPerfilContainer = styled.img`
     padding-bottom: 1vh;
@@ -20,6 +37,24 @@ export const UserName = styled.div`
 
     padding-left: 2vw;
     padding-top: 2vh;
+`
+
+export const InputPicture = styled.input`
+    width: 30vw;
+    height: 10vh;
+
+    background-color: #faf9f6;
+`
+
+export const InputLegend = styled.input`
+    width: 30vw;
+    height: 3vh;
+
+    background-color: #faf9f6;
+`
+
+export default Texto = styled.p`
+    color: #797c7b;
 `
 
 export const ContainerGeralButton = styled.button`

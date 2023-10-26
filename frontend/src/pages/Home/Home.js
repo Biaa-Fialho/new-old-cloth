@@ -1,6 +1,7 @@
 import { DivClara, DivHomeGeral, DivTextHeader } from "./style"
 import PublishHome from "../../components/PublishHome/PublishHome"
 import HeaderGeral from "../../components/Header/HeaderGeral"
+import FooterB from "../../components/FooterBotton/FooterB"
 
 function Home() {
     return (
@@ -13,6 +14,8 @@ function Home() {
                 <PublishHome />
                 {/* <PublishHome/> */}
             </DivClara>
+
+            <FooterB/>
 
         </>
 

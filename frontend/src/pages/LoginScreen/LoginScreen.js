@@ -8,8 +8,6 @@ import HeaderGeneral from '../../components/Header/HeaderSeta'
 function LoginScreen() {
     const navigate = useNavigate()
 
-
-
     return (
         <>
 
