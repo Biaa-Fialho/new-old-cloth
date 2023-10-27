@@ -1,11 +1,12 @@
 import styled from "styled-components" ;
 
 export const DivGeralFooter = styled.div`
-    display: flex;
     flex-direction: row;
     align-items: end;
     align-self: center;
-    justify-content: block;
+
+    position: fixed;
+    bottom: 0;
 
     background-color:#C8FFA7;
 

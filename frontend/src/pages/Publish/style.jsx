@@ -6,7 +6,15 @@ export const DivHeader = styled.div`
     align-items: flex-start;
     justify-content: space-between;
 `
-export const DivClaraPublish = styled.di`
+
+export const DivGeral = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+`
+
+export const DivClaraPublish = styled.div`
     background-color: #deffca;
 
     display: flex;
@@ -24,7 +32,7 @@ export const DivClaraPublish = styled.di`
     border-top-right-radius: 30px;
 `
 
-export const ImgBoyPerfilContainer = styled.img`
+export const ImgBoyPublish = styled.img`
     padding-bottom: 1vh;
     padding-left: 3vw;
     padding-top: 1.5vh;
@@ -53,8 +61,10 @@ export const InputLegend = styled.input`
     background-color: #faf9f6;
 `
 
-export default Texto = styled.p`
+export const ContainerText = styled.p`
     color: #797c7b;
+    font-size: medium;
+    background-color: red;
 `
 
 export const ContainerGeralButton = styled.button`

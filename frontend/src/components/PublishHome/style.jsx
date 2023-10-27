@@ -57,19 +57,25 @@ export const FunciotionsDiv = styled.div`
     justify-content: space-between;
 `
 
-export const ImgLike = styled.img`
+export const ImgLike = styled.button`
     padding-top: 1.5vh;
     padding-left: 12vw;
+    border: none;
+    background-color: transparent;
 `
 
-export const ImgComment = styled.img`
+export const ImgComment = styled.button`
     padding-top: 1.2vh;
     padding-left: 1.5vw;
+    border: none;
+    background-color: transparent;
 `
 
-export const ImgSend = styled.img`
+export const ImgSend = styled.button`
     padding-top: 0.6vh;
-    padding-left: vw;
+    /* padding-left: vw; */
+    border: none;
+    background-color: transparent;
 `
 
 export const DivLegend = styled.div`

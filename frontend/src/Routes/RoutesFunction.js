@@ -8,20 +8,22 @@ import Search from "../pages/Shearch/Search";
 import Publish from "../pages/Publish/Publish"
 import ChatHome from "../pages/ChatHome/ChatHome"
 import Account from "../pages/Account/Accont"
+import Comments from "../pages/Comments/Comments"
 
 function RoutesFunction(){
     return(
         <BrowserRouter>
             <Routes>
                 <Route index element={<FirstPage/>}/>
-                {/* <Route path='login' element={<LoginScreen/>}/>
+                <Route path='login' element={<LoginScreen/>}/>
                 <Route path="cadastro" element={<RegisterScreen/>}/>
                 <Route path='select' element={<SelectPage/>}/>
                 <Route path="home" element={<Home/>}/>
                 <Route path="search" element={<Search/>}/>
                 <Route path="publish" element={<Publish/>}/>
                 <Route path="chatHome" element={<ChatHome/>}/>
-                <Route path="account" element={<Account/>}/> */}
+                <Route path="account" element={<Account/>}/>
+                <Route path="comments" element={<Comments/>}/>
             </Routes>
         </BrowserRouter>
     )

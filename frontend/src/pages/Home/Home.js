@@ -1,4 +1,4 @@
-import { DivClara, DivHomeGeral, DivTextHeader } from "./style"
+import { DivClara } from "./style"
 import PublishHome from "../../components/PublishHome/PublishHome"
 import HeaderGeral from "../../components/Header/HeaderGeral"
 import FooterB from "../../components/FooterBotton/FooterB"

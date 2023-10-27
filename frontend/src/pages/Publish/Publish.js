@@ -1,6 +1,6 @@
 import FooterB from "../../components/FooterBotton/FooterB"
 import HeaderGeral from "../../components/Header/HeaderGeral"
-import { DivHeader, ContainerGeralButton, ImgBoyPerfilContainer, SingleButton, UserName, InputPicture, InputLegend } from "./style"
+import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputPicture, InputLegend,  ContainerText, DivGeral, ImgBoyPublish } from "./style"
 
 function Home() {
     // const 
@@ -10,18 +10,19 @@ function Home() {
             <DivGeral>
 
                 <DivHeader>
-                    <ImgBoyPerfilContainer src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
+                    <ImgBoyPublish src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
                     <UserName>joao036</UserName>
                 </DivHeader>
-                <InputPicture>
+                <InputPicture type="file">
                 
                 </InputPicture>
                 <InputLegend>
                 
                 </InputLegend>
-                <div>
 
-                </div>
+                <ContainerText>
+
+                </ContainerText>
                 
                 <ContainerGeralButton>
                 
