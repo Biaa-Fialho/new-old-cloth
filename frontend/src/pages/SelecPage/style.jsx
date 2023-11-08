@@ -1,6 +1,8 @@
 import styled from "styled-components" ;
 
-
+export const DivGeral = styled.div`
+    background-color: #faf9f6; 
+`
 
 export const DivTextSelect = styled.div`
     background-color: #faf9f6; 

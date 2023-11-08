@@ -4,8 +4,6 @@ import { DivHomeGeral, DivImageBack, ImgBackContainer, TextHeader } from "./styl
 
 function HeaderGeral(){
 
- 
-
     return(
         <DivHomeGeral>
             <TextHeader>Home</TextHeader>

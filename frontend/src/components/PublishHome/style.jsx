@@ -15,6 +15,7 @@ export const DivGeralPublishHome = styled.div`
 
     width: 90vw;
 
+    z-index: 1;
 `
 
 export const DivHeader = styled.div`

@@ -1,4 +1,4 @@
-import styled from "styled-components" ;
+import styled from "styled-components" 
 
 export const DivImageBack = styled.button`
     display: flex;
@@ -28,6 +28,8 @@ export const DivHomeGeral = styled.header`
     height: 10vh;
 
     font-family: Arial;
+
+    z-index: 4;
 `
 
 export const TextHeader = styled.p`

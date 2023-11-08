@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { DivGeralFooter, ImgChatHome, ImgHome, ImgPublish, ImgSearch, ImgUser } from "./style"
+import { DivGeralFooter, DivColored, DivOtherButtons1, DivOtherButtons2, DivPubishButton, ImgChatHome, ImgHome, ImgPublish, ImgButtonHome, ImgButtonSearch, ImgSearch, ImgUser, ImgButtonsGeneral, ImgButtonsPublish } from "./style"
 import Home from "../../assets/home.svg"
 import Search from "../../assets/Search.svg"
 import publish from "../../assets/publish.svg"
@@ -11,13 +11,21 @@ function FooterB(){
     const navigate = useNavigate()
 
     return(
-        <DivGeralFooter>
-            <ImgHome src={Home} alt='imagem de uma casinha' onClick={()=>navigate('/home')}/>
-            <ImgSearch src={Search} alt='imagem de uma lupa' onClick={()=>navigate('/search')}/>
-            <ImgPublish src={publish} alt='Imagem de um sinal de mais' onClick={()=>navigate('/publish')}/>
-            <ImgChatHome src={chatHome} alt='Imagem de uma flecha de voltar' onClick={()=>navigate('/chatHome')}/>
-            <ImgUser src={user} alt='Imagem de perfil' onClick={()=>navigate('/account')}/>
-        </DivGeralFooter>
+            <DivGeralFooter>
+                    <DivOtherButtons1>
+                        <ImgHome onClick={()=>navigate('/home')}><ImgButtonHome src={Home} alt='imagem de uma casinha'/></ImgHome>
+                        <ImgSearch src={Search} alt='imagem de uma lupa' onClick={()=>navigate('/search')}><ImgButtonSearch src={Search} alt='imagem de uma lupa'/> </ImgSearch>
+                    </DivOtherButtons1>
+                    <DivPubishButton>
+                        <DivColored>
+                            <ImgPublish onClick={()=>navigate('/publish')}><ImgButtonsPublish src={publish} alt='Imagem de um sinal de mais'/></ImgPublish>
+                        </DivColored>
+                    </DivPubishButton>
+                    <DivOtherButtons2>
+                        <ImgChatHome onClick={()=>navigate('/chatHome')}><ImgButtonsGeneral src={chatHome} alt='Imagem de uma flecha de voltar'/></ImgChatHome>
+                        <ImgUser onClick={()=>navigate('/account')}><ImgButtonsGeneral src={user} alt='Imagem de perfil'/></ImgUser>
+                    </DivOtherButtons2>
+            </DivGeralFooter>
     )
 }
 
