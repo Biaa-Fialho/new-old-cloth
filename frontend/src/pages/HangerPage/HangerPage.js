@@ -21,7 +21,7 @@ function FirstPage(){
                 </DivTitlePage>
 
                 <DivDontHaveAccount>
-                    <ButtonEnter onClick={goToLogin}>Entrar</ButtonEnter>
+                    <ButtonEnter onClick={()=>navigate('/enter')}>Entrar</ButtonEnter>
                 </DivDontHaveAccount>
             </DivGeral>
         </>

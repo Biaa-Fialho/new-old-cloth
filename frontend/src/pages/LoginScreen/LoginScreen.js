@@ -11,9 +11,7 @@ function LoginScreen() {
     return (
         <>
 
-            <HeaderGeneral 
-           
-            />
+            <HeaderGeneral/>
 
             <MainLogin>
             <DivForm>
@@ -30,7 +28,7 @@ function LoginScreen() {
                             <InputPassword placeholder='' required/>
                         </LabelPassword>
 
-                        <ButtonLogin onClick={()=>navigate('/home')}>Entrar</ButtonLogin>
+                        <ButtonLogin onClick={()=>navigate('/home')}>Login</ButtonLogin>
                     </Form01>
                     <DivDontHaveAccount>
                         <p>Não possui cadastro?</p>

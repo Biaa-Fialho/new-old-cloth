@@ -5,7 +5,7 @@ export const MainLogin = styled.div`
     // grid-template-columns: 50vw 50vw;
     // grid-template-rows: 100vh;
     // grid-template-areas: "DivForm ";
-    font-family: 'Bona Nova', serif, 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #faf9f6;
     margin-top: -7vh;
     width: 100vw;
@@ -100,10 +100,11 @@ export const TitleContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 80px;
-    margin-left: 20px;
+    margin-left: 45px;
     margin-bottom: 10px;
+    font-weight: bold;
 `
 
 export const ButtonLogin = styled.button`
@@ -124,6 +125,9 @@ export const ButtonLogin = styled.button`
     margin-top: 0vh;
     margin-left: 50px; */
 
+    color: #f0ffe7;
+    font-weight: bold;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +137,8 @@ export const ButtonLogin = styled.button`
 
     background-color: #8ac06a;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
+    font-size: 18px;
 
     width: 60vw;
     height: 8vh;

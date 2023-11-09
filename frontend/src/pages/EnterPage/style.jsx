@@ -8,65 +8,95 @@ export const DivGeral = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 87vw;
-    height: 85vh;
+    width: 100vw;
+    height: 100vh;
 `
 export const DivTitlePage = styled.div`
     font-family: 'Bona Nova', serif;
+    color: #faf9f6;
+    font-size: 70px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    color: #0d2600;
-    font-size: 35px;
-    margin-top: 1px;
-
+    padding-left: 4vw;
+    padding-right: 8vw;
+    /* padding-top: -8vh; */
 `
 export const DivTextPage = styled.div`
     font-family: 'Bona Nova', serif;
+    color: #faf9f6;
+    font-size: 25px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 2vh;
 `
 export const ButtonEnter = styled.button`
-    color: #faf9f6;
-    background-color: #8ac06a;
+    font-family: 'Bona Nova', serif;
+    color: #153b01;
+    font-size: 20px;
+    background-color: #f0ffe7;
 
     border: none;
     width: 60vw;
     height: 5vh;
     border-radius: 8px;
     // font-weight: bolder;
-    margin-top: 10vh;
-    margin-bottom: 0vh;
+    margin-top: 19vh;
 
-    // pseudo-selector: active, #507937;
+    
+    /* pseudo-selector: active, #507937; */
 `
 
 export const DivDontHaveAccount = styled.div `
-    margin-top: 25vh;
+    margin-top: 10vh;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    color: #000e08;
+    color: #faf9f6;
+    font-size: 20px;
+    font-family: 'Bona Nova', serif;
+`
+
+export const Cadastro = styled.p`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    
+    font-size: 20px;
+    font-family: 'Bona Nova', serif;
+
+    margin-top: -5vh;
 `
 
 export const ButtonCreateAccount = styled.button`
+    font-family: 'Bona Nova', serif;
+    color: #cbe5bb;
+    font-size: 20px;
+
+    background-color: #153b01;
     border: none;
 
-    color: #507937;
-    background-color: #faf9f6;;
-    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     margin-bottom: 1vh; 
-    margin-top: 0;
+    margin-top: 2vh;
     width: 10vw;
-    height: 10vh;
+    height: 5vh;
+
 `

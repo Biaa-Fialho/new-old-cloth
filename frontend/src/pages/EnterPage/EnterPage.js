@@ -1,4 +1,4 @@
-import { ButtonCreateAccount, ButtonEnter, DivDontHaveAccount, DivGeral, DivTextPage, DivTitlePage } from "./style";
+import { ButtonCreateAccount, ButtonEnter, Cadastro, DivDontHaveAccount, DivGeral, DivTextPage, DivTitlePage } from "./style";
 import { useNavigate } from "react-router-dom"
 
 
@@ -15,7 +15,7 @@ function EnterPage(){
         
             <DivGeral>
                 <DivTitlePage>
-                    <h1>Encontre sua roupa ideal</h1>
+                    <DivTitlePage>Encontre sua roupa ideal</DivTitlePage>
                 </DivTitlePage>
                 <DivTextPage>
                     <p>O app certo para você encontrar
@@ -26,8 +26,8 @@ function EnterPage(){
                     <ButtonEnter onClick={goToLogin}>Entrar</ButtonEnter>
                 </DivDontHaveAccount>
                 <DivDontHaveAccount>
-                        <p>Não possui cadastro?</p>
-                        <ButtonCreateAccount onClick={()=>navigate('/cadastro')}>Criar conta</ButtonCreateAccount>
+                        <Cadastro>Não possui uma conta?</Cadastro>
+                        <ButtonCreateAccount onClick={()=>navigate('/cadastro')}>Entre aqui</ButtonCreateAccount>
                 </DivDontHaveAccount>
             </DivGeral>
         

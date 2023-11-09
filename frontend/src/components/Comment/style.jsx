@@ -11,6 +11,7 @@ export const DivHeader = styled.div`
 
     padding-right: 5vw;
     padding-left: 5vw;
+    padding-top: 3vh;
 `
 
 export const DivNameLegend = styled.div`
@@ -29,6 +30,4 @@ export const DivLegend = styled.div`
     font-size: 17px;
 
     gap: 2vw;
-
-    padding-bottom: 3vh;
 `
