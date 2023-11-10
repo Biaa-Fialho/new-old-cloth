@@ -6,7 +6,9 @@ import FooterB from "../../components/FooterBotton/FooterB"
 function Home() {
     return (
         <>
-            <HeaderGeral />
+            <HeaderGeral 
+                titulo='Home'
+            />
             <DivEscura>
                 <DivClara>
                     <PublishHome/>

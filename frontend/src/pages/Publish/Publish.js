@@ -1,24 +1,29 @@
 import FooterB from "../../components/FooterBotton/FooterB"
 import HeaderGeral from "../../components/Header/HeaderGeral"
-import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputPicture, InputLegend,  ContainerText, DivGeral, ImgBoyPublish } from "./style"
+import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg"
+import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputPicture, InputLegend,  ContainerText, DivGeral, ImgBoyPublish, DivClara, DivInput } from "./style"
 
 function Home() {
     // const 
     return (
         <>
-            <HeaderGeral/>
+            <HeaderGeral
+                titulo = "Publicar"
+            />
             <DivGeral>
-
+                <DivClara>
                 <DivHeader>
                     <ImgBoyPublish src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
                     <UserName>joao036</UserName>
                 </DivHeader>
-                <InputPicture type="file">
+
+                <DivInput>
+                    <InputPicture type="file"/>
                 
-                </InputPicture>
-                <InputLegend>
+                    <InputLegend>
                 
-                </InputLegend>
+                    </InputLegend>
+                </DivInput>
 
                 <ContainerText>
 
@@ -49,7 +54,11 @@ function Home() {
                     <SingleButton>Bolsas</SingleButton>
                     <SingleButton>Mochilas</SingleButton>
                     
-            </ContainerGeralButton>
+                </ContainerGeralButton>
+
+                <FooterB/>
+
+                </DivClara>
 
             <FooterB/>
 

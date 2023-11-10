@@ -158,15 +158,28 @@ export const DivDontHaveAccount = styled.div `
     color: #000e08;
 `
 
+export const Paragrafo = styled.p`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 10vw;
+`
+
 export const ButtonCreateAccount = styled.button`
     border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     color: #507937;
     background-color: #faf9f6;;
     font-weight: bolder;
 
-    margin-bottom: 1vh; 
-    margin-top: 0;
     width: 10vw;
     height: 10vh;
+    padding-left: 10vw;
 `

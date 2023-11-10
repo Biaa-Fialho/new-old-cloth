@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { MainLogin, DivForm, DivContentForm, LabelPassword, TitleContainer, ButtonLogin, Form01, LabelContainer, DivDontHaveAccount, ButtonCreateAccount, InputEmail, InputPassword} from './style'
+import { MainLogin, DivForm, DivContentForm, LabelPassword, TitleContainer, ButtonLogin, Form01, LabelContainer, DivDontHaveAccount, ButtonCreateAccount, InputEmail, InputPassword, Paragrafo} from './style'
 import HeaderGeneral from '../../components/Header/HeaderSeta'
 // import LoginHeader from '../../components/LoginHeader/LoginHeader'
 // import InputLogin from '../../components/InputLogin/InputLogin'
@@ -31,7 +31,7 @@ function LoginScreen() {
                         <ButtonLogin onClick={()=>navigate('/home')}>Login</ButtonLogin>
                     </Form01>
                     <DivDontHaveAccount>
-                        <p>Não possui cadastro?</p>
+                        <Paragrafo>Não possui cadastro?</Paragrafo>
                         <ButtonCreateAccount onClick={()=>navigate('/cadastro')}>Criar conta</ButtonCreateAccount>
                     </DivDontHaveAccount>
                 </DivContentForm>

@@ -1,12 +1,12 @@
 
-import { DivHomeGeral, DivImageBack, ImgBackContainer, TextHeader } from "./style"
+import { DivHomeGeral, TextHeader } from "./style"
 
 
-function HeaderGeral(){
+function HeaderGeral(props){
 
     return(
         <DivHomeGeral>
-            <TextHeader>Home</TextHeader>
+            <TextHeader>{props.titulo}</TextHeader>
         </DivHomeGeral>
     )
 }

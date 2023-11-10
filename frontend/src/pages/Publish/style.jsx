@@ -5,6 +5,8 @@ export const DivHeader = styled.div`
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+
+    padding-left: 3vw;
 `
 
 export const DivGeral = styled.div`
@@ -12,6 +14,31 @@ export const DivGeral = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    background-color: #0a1d00;
+`
+
+export const DivClara = styled.div`
+    background-color: #deffca;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vh;
+
+    width: 100vw;
+    /* max-height: 150vh; */
+    
+    padding-top: 2vh;
+
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    z-index: 2;
+
+    padding-bottom: 12vh;
 `
 
 export const DivClaraPublish = styled.div`
@@ -47,18 +74,26 @@ export const UserName = styled.div`
     padding-top: 2vh;
 `
 
-export const InputPicture = styled.input`
-    width: 30vw;
-    height: 10vh;
+export const DivInput = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
 
-    background-color: #faf9f6;
+export const InputPicture = styled.input`
+    width: 80vw;
+    height: 40vh;
+
+    background-color: #FFFFFF;
+
 `
 
 export const InputLegend = styled.input`
     width: 30vw;
     height: 3vh;
 
-    background-color: #faf9f6;
+    background-color: #FFFFFF;
 `
 
 export const ContainerText = styled.p`
@@ -67,11 +102,9 @@ export const ContainerText = styled.p`
     background-color: red;
 `
 
-export const ContainerGeralButton = styled.button`
-    background-color: #faf9f6;
-
+export const ContainerGeralButton = styled.div`
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 200px 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -81,7 +114,7 @@ export const ContainerGeralButton = styled.button`
 `
 
 export const SingleButton = styled.button`    
-    background-color: #d3fabc;
+    background-color: #A3D386;
     color: #0a1d00 ;
 
     width: 40vw;

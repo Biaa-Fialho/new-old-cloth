@@ -23,7 +23,7 @@ function EnterPage(){
                      meio ambiente </p>
                 </DivTextPage>
                 <DivDontHaveAccount>
-                    <ButtonEnter onClick={goToLogin}>Entrar</ButtonEnter>
+                    <ButtonEnter onClick={goToLogin}>Login</ButtonEnter>
                 </DivDontHaveAccount>
                 <DivDontHaveAccount>
                         <Cadastro>Não possui uma conta?</Cadastro>

@@ -13,7 +13,7 @@ export const DivGeral = styled.div`
 `
 export const DivTitlePage = styled.div`
     font-family: 'Bona Nova', serif;
-    color: #faf9f6;
+    color: #C8FFA7;
     font-size: 70px;
 
     display: flex;
@@ -27,7 +27,7 @@ export const DivTitlePage = styled.div`
 `
 export const DivTextPage = styled.div`
     font-family: 'Bona Nova', serif;
-    color: #faf9f6;
+    color: #C8FFA7;
     font-size: 25px;
 
     display: flex;

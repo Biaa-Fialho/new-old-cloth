@@ -14,6 +14,9 @@ export const DivHeader = styled.div`
     padding-top: 3vh;
 `
 
+export const DivLikeAccont = styled.div`
+`
+
 export const DivNameLegend = styled.div`
     color: black;
     font-size: 18px;
@@ -30,4 +33,9 @@ export const DivLegend = styled.div`
     font-size: 17px;
 
     gap: 2vw;
+`
+export const ImgLike = styled.button`
+    padding-left: 80vw;
+    border: none;
+    background-color: transparent;
 `
