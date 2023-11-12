@@ -81,25 +81,60 @@ export const DivInput = styled.div`
     justify-content: center;
 `
 
-export const InputPicture = styled.input`
+export const ButtonPicture = styled.button`
+    color: #797C7B;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 80vw;
-    height: 40vh;
+    height: 35vh;
+    padding-left: 3vw;
+    margin-left: 10vw;
+
 
     background-color: #FFFFFF;
-
+    border: none;
+    border-radius: 10px;
 `
 
 export const InputLegend = styled.input`
-    width: 30vw;
-    height: 3vh;
+    width: 80vw;
+    height: 6vh;
+    padding-top: 3vh;
+    margin-top: 3vh;
+    margin-left: 10vw;
 
     background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    font-size: medium;
+
+    padding: 7px; 
+    box-sizing: border-box;
+
 `
 
-export const ContainerText = styled.p`
+export const ContainerText = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+
     color: #797c7b;
     font-size: medium;
-    background-color: red;
+
+    width: 80vw;
+    height: 6vh;
+    margin-left: 10vw;
 `
 
 export const ContainerGeralButton = styled.div`

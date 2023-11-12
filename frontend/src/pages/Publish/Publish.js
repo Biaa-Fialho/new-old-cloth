@@ -1,10 +1,16 @@
 import FooterB from "../../components/FooterBotton/FooterB"
 import HeaderGeral from "../../components/Header/HeaderGeral"
 import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg"
-import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputPicture, InputLegend,  ContainerText, DivGeral, ImgBoyPublish, DivClara, DivInput } from "./style"
+import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputLegend,  ContainerText, DivGeral, ImgBoyPublish, DivClara, DivInput, ButtonPicture } from "./style"
+import { useNavigate } from "react-router-dom"
+import { useState } from "react"
+import SelectPicture from "../../components/SelectPicture/SelectPicture"
 
-function Home() {
-    // const 
+function Publish() {
+
+    // funcionalidade do modal
+    const[openSelectPicture, setOpenSelectPicture] = useState(false)
+
     return (
         <>
             <HeaderGeral
@@ -18,16 +24,15 @@ function Home() {
                 </DivHeader>
 
                 <DivInput>
-                    <InputPicture type="file"/>
+                    <ButtonPicture onClick={()=> setOpenSelectPicture(true)}>Adicionar imagem</ButtonPicture>
                 
-                    <InputLegend>
-                
-                    </InputLegend>
+                    <InputLegend type="text" placeholder="Adicionar legenda"/>
+
                 </DivInput>
 
-                <ContainerText>
+                <SelectPicture isOpen={openSelectPicture} setOpenSelectPicture={()=> setOpenSelectPicture(!openSelectPicture)}/>
 
-                </ContainerText>
+                <ContainerText>Adicionar descrição</ContainerText>
                 
                 <ContainerGeralButton>
                 
@@ -53,7 +58,7 @@ function Home() {
                     <SingleButton>Sandálias</SingleButton>
                     <SingleButton>Bolsas</SingleButton>
                     <SingleButton>Mochilas</SingleButton>
-                    
+                  
                 </ContainerGeralButton>
 
                 <FooterB/>
@@ -66,4 +71,4 @@ function Home() {
         </>
     )
 }
-export default Home
+export default Publish

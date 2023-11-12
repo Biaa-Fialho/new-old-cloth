@@ -11,6 +11,7 @@ import Chat from "../pages/Chat/Chat";
 import Account from "../pages/Account/Accont";
 import Comments from "../pages/Comments/Comments";
 import EnterPage from "../pages/EnterPage/EnterPage";
+import SelectPicture from "../components/SelectPicture/SelectPicture";
 
 function RoutesFunction(){
     return(
@@ -24,6 +25,7 @@ function RoutesFunction(){
                 <Route path="home" element={<Home/>}/>
                 <Route path="search" element={<Search/>}/>
                 <Route path="publish" element={<Publish/>}/>
+                <Route path="selectPublish" element={<SelectPicture/>}/>
                 <Route path="chatHome" element={<ChatHome/>}/>
                 <Route path="chat" element={<Chat/>}/>
                 <Route path="account" element={<Account/>}/>
