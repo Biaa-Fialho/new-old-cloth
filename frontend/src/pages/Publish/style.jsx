@@ -94,7 +94,6 @@ export const ButtonPicture = styled.button`
     padding-left: 3vw;
     margin-left: 10vw;
 
-
     background-color: #FFFFFF;
     border: none;
     border-radius: 10px;
