@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FirstPage from "../pages/HangerPage/HangerPage";
+import HangerPage from "../pages/HangerPage/HangerPage";
 import LoginScreen from "../pages/LoginScreen/LoginScreen";
 import RegisterScreen from "../pages/RegisterScreen/RegisterScreen"
 import SelectPage from "../pages/SelecPage/SelectPage";
@@ -12,12 +13,15 @@ import Account from "../pages/Account/Accont";
 import Comments from "../pages/Comments/Comments";
 import EnterPage from "../pages/EnterPage/EnterPage";
 import SelectPicture from "../components/SelectPicture/SelectPicture";
+import ConfAccont from "../pages/ConfAccont/ConfAccont";
+
 
 function RoutesFunction(){
     return(
         <BrowserRouter>
             <Routes>
                 <Route index element={<FirstPage/>}/>
+                <Route path="hangerPage" element={<HangerPage/>}/>
                 <Route path="enter" element={<EnterPage/>}/>
                 <Route path='login' element={<LoginScreen/>}/>
                 <Route path="cadastro" element={<RegisterScreen/>}/>
@@ -30,6 +34,7 @@ function RoutesFunction(){
                 <Route path="chat" element={<Chat/>}/>
                 <Route path="account" element={<Account/>}/>
                 <Route path="comments" element={<Comments/>}/>
+                <Route path="confgAccount" element={<ConfAccont/>}/>
             </Routes>
         </BrowserRouter>
     )

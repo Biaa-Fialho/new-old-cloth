@@ -7,7 +7,7 @@ export const DivClara = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vh;
+    /* gap: 2vh; */
 
     width: 100vw;
     /* max-height: 150vh; */
@@ -36,7 +36,7 @@ export const DivHeaderAccount = styled.div`
     width: 50vw;
     height: 20vh;
     
-    padding-top: 1vh;
+    padding-top: -5vh;
 `
 export const DivImg = styled.img`
     height: 30vh;
@@ -51,7 +51,18 @@ export const DivTextName = styled.h1`
 
     padding-top: 0vh;
 `
-
+export const DivButtonConfig =styled.div`
+    padding-left: 80vw;
+`
+export const ButtonConfig = styled.button`
+    background-color: transparent;
+    border: none;
+    padding-top: 1vh;
+`
+export const ImgButtonConfig = styled.img`
+    width: 2vw;
+    height: 4vh;
+`
 export const GridContainer = styled.div`
     /* background-color: purple; */
     display: grid;

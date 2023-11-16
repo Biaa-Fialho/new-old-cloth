@@ -6,7 +6,7 @@ export const DivImageBack = styled.button`
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 3vh;
-    background-color:#faf9f6;
+    background-color: transparent;
     padding-top: 2vh;
     padding-left: 1vw;
     border: none;
