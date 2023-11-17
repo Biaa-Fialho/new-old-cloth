@@ -3,10 +3,14 @@ import HeaderGeral from "../../components/Header/HeaderGeral"
 import HeaderSeta from "../../components/Header/HeaderSeta"
 import ImgCamera from "../../assets/ImgCamera2.svg"
 // import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg"
-import { DivClara, DivEscura, DivImagens, DivInputSelect, ImgBoyPerfilContainer, ImgMedia, InputName, InputSelectFile, LabelContainer } from "./style"
-
+import { ButtonSave, DivClara, DivEscura, DivHeader, DivImagens, DivInputSelect, GridContainer, ImgMedia, InputName, InputSelectFile, LabelContainer } from "./style"
+import { useState } from "react"
+import SaveConfig from "../../components/SaveConfig/SaveConfig"
 
 function  ConfAccont(){
+    // funcionalidade do modal
+    const[openSaveConfig, setOpenSaveConfig] = useState(false)
+
     return(
         <>
             <HeaderGeral 
@@ -14,7 +18,13 @@ function  ConfAccont(){
             />
             <DivEscura>
                 <DivClara>
-                    <HeaderSeta/>
+                    <DivHeader>
+                        <HeaderSeta/>
+                        <ButtonSave onClick={()=> setOpenSaveConfig(true)}>Salvar</ButtonSave>
+                    </DivHeader>
+
+                    <SaveConfig isOpen={openSaveConfig} setOpenSaveConfig={()=> setOpenSaveConfig(!openSaveConfig)}/>
+                    
                     <DivInputSelect>
                         <label htmlFor="file-input">
                             <InputSelectFile type="file" id="file-input"/>

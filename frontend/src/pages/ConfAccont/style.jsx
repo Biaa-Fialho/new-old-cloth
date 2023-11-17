@@ -29,6 +29,32 @@ export const DivClara = styled.div`
 export const DivEscura = styled.div`
     background-color: #0a1d00;
 `
+export const DivHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+`
+export const ButtonSave = styled.button`
+    grid-area: ButtonSave;
+    background-color: #A3D386;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #507937;
+    }
+
+    width: 20vw;
+    height: 4vh;
+    margin-left: 60vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    border-radius: 20px;
+`
 export const DivInputSelect = styled.div`
     background-image: url(${ImgBoyPerfil});
     background-size: cover;
@@ -46,7 +72,9 @@ export const DivInputSelect = styled.div`
     align-items: center;
     max-width: 25vw;
     max-height: 25vw;
-    position: relative;
+    /* position: relative; */
+
+    margin-left: 37vw;
 `
 
 export const InputSelectFile = styled.input`
@@ -79,21 +107,19 @@ export const ImgMedia = styled.img`
     align-items: center;
     justify-content: center;
     position: relative;
-
-    z-index: 100;
 `
-export const ImgBoyPerfilContainer = styled.img`
-    width: 25vw;
-    height: 25vw;
-    max-width: 25vw;
-    max-height: 25vw;
-    position: relative;
+// export const ImgBoyPerfilContainer = styled.img`
+//     width: 25vw;
+//     height: 25vw;
+//     max-width: 25vw;
+//     max-height: 25vw;
+//     position: relative;
 
-    z-index: 0;
-`
+//     z-index: 0;
+// `
 export const LabelContainer = styled.label`
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 6vh;
+    margin-top: 3vh;
     color: #797c7b;
     font-weight: bold;
     font-size: large;
