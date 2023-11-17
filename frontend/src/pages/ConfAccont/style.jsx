@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg"
+
 export const DivClara = styled.div`
     background-color: #deffca;
 
@@ -27,9 +29,71 @@ export const DivClara = styled.div`
 export const DivEscura = styled.div`
     background-color: #0a1d00;
 `
+export const DivInputSelect = styled.div`
+    background-image: url(${ImgBoyPerfil});
+    background-size: cover;
+    opacity: 0.6;
+    width: 25vw;
+    height: 25vw;
+    background-color: #797c7b7e;
+
+    color: transparent;
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25vw;
+    max-height: 25vw;
+    position: relative;
+`
+
+export const InputSelectFile = styled.input`
+    border-radius: 100%;
+    border: none;
+    color: transparent;
+    opacity: 0;
+
+    /* Alteração: Remova estas linhas */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+`
+
+export const DivImagens = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+export const ImgMedia = styled.img`
+    width: 12vw;
+    height: 12vw;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    z-index: 100;
+`
+export const ImgBoyPerfilContainer = styled.img`
+    width: 25vw;
+    height: 25vw;
+    max-width: 25vw;
+    max-height: 25vw;
+    position: relative;
+
+    z-index: 0;
+`
 export const LabelContainer = styled.label`
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 8vh;
+    margin-top: 6vh;
     color: #797c7b;
     font-weight: bold;
     font-size: large;
