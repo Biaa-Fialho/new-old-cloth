@@ -2,6 +2,8 @@ import styled from "styled-components" ;
 
 export const DivGeral = styled.div`
     background-color: #faf9f6; 
+    width: 100vw;
+    height: 100vh;
 `
 
 export const DivTextSelect = styled.div`
@@ -11,7 +13,7 @@ export const DivTextSelect = styled.div`
     align-items: center;
     justify-content: center;
 
-    margin-top: 4vh;
+    margin-top: 2vh;
     margin-bottom: 3vh;
 `
 export const DivFontTitle = styled.div`
@@ -41,6 +43,8 @@ export const containerGeralButton = styled.button`
 
     width: 100vw;
     height: 100vh;
+
+    padding-left: 20vw;
 `
 
 export const SingleButton = styled.button`    
@@ -50,12 +54,19 @@ export const SingleButton = styled.button`
     width: 40vw;
     height: 5vh;
 
-    margin-left: 13px;
+    margin-left: 28px;
     margin-bottom: 8px;
     margin-top: 8px;
 
     border-radius: 20px;
-    border-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #A3D386;
+    }
 `
 
 export const SelectButton = styled.button`
@@ -74,6 +85,5 @@ export const SelectButton = styled.button`
     // font-weight: bolder;
 
     margin-top: 4vh;
-    margin-bottom: 3vh;
-    margin-left: 50px;
+    margin-left: 80px;
 `

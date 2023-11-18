@@ -5,6 +5,7 @@ export const DivGeralFooter = styled.div`
     align-items: end;
     align-self: center;
     display: block; */
+    margin-top: auto;
 
     position: fixed;
     bottom: 0;
@@ -17,6 +18,8 @@ export const DivGeralFooter = styled.div`
     grid-template-columns: 40vw 20vw 40vw;
     grid-template-rows: 9vh;
     grid-template-areas: 'DivOtherButtons1 DivPubishButton DivOtherButtons2';
+    margin: 0;
+    padding: 0;
 `
 
 export const DivOtherButtons1 = styled.div`

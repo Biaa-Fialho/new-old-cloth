@@ -12,7 +12,7 @@ function SelectPage(){
             <DivGeral>
 
                 <HeaderSeta/>
-
+                
                 <containerGeralButton> 
                     
                     <DivTextSelect>

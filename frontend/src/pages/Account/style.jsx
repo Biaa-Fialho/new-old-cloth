@@ -7,7 +7,7 @@ export const DivClara = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 2vh; */
+    gap: 2vh;
 
     width: 100vw;
     /* max-height: 150vh; */
