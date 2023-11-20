@@ -98,7 +98,14 @@ export const ButtonPicture = styled.button`
     border: none;
     border-radius: 10px;
 `
+export const TextImg = styled.p`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    padding-left: 70vw;
+`
 export const InputLegend = styled.input`
     width: 80vw;
     height: 6vh;

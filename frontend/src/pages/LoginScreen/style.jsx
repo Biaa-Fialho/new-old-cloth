@@ -24,7 +24,7 @@ export const Form01 = styled.form`
 export const LabelPassword = styled.label`
     margin-top: 1vh;
     margin-left: 20px;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
 
     color: #797c7b;
 `
@@ -64,17 +64,14 @@ export const InputPassword = styled.input`
     justify-content: center;
 
     background-color: #faf9f6;
-    color: #faf9f6;
     border: 10px;
     border-color: #797c7b;
-    /* border-radius: 8px;
-    border-bottom: 5px; */
+    /* border-radius: 8px; */
     outline: none;
     border: none;
     border-bottom: 1px solid #797c7b;
 
-    margin-top: 2vh;
-    margin-bottom: -10vh;
+    /* margin-top: 2vh; */
     width: 80vw;
     height: 5vh;
 `
