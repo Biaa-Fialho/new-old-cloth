@@ -17,6 +17,26 @@ export const DivGeral = styled.div`
 
     background-color: #0a1d00;
 `
+export const ButtonSave = styled.button`
+    grid-area: ButtonSave;
+    background-color: #A3D386;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #507937;
+    }
+
+    width: 20vw;
+    height: 4vh;
+    margin-left: 38vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    border-radius: 20px;
+`
 
 export const DivClara = styled.div`
     background-color: #deffca;

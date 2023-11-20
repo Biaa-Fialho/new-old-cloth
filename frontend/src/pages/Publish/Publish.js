@@ -3,13 +3,15 @@ import FooterB from "../../components/FooterBotton/FooterB";
 import HeaderGeral from "../../components/Header/HeaderGeral";
 import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg";
 import ImgMediaSelect from "../../assets/media.svg";
-import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputLegend, ContainerText, DivGeral, ImgBoyPublish, DivClara, DivInput, ButtonPicture, TextImg } from "./style";
+import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputLegend, ContainerText, DivGeral, ImgBoyPublish, DivClara, DivInput, ButtonPicture, TextImg, ButtonSave } from "./style";
 import { useNavigate } from "react-router-dom";
 import SelectPicture from "../../components/SelectPicture/SelectPicture";
+import ConfirmPost from "../../components/ConfirmPost/ConfirmPost";
 
 function Publish() {
     // funcionalidade do modal
     const [openSelectPicture, setOpenSelectPicture] = useState(false);
+    const[openConfirmPost, setOpenConfirmPost] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
   
     const handleFileChange = (event) => {
@@ -29,8 +31,11 @@ function Publish() {
             <DivHeader>
               <ImgBoyPublish src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
               <UserName>joao036</UserName>
+              <ButtonSave onClick={()=> setOpenConfirmPost(true)}>Salvar</ButtonSave>
             </DivHeader>
-  
+
+            <ConfirmPost isOpen={openConfirmPost} setOpenConfirmPost={()=> setOpenConfirmPost(!openConfirmPost)}/>
+
             <DivInput>
               {/* <ButtonPicture onClick={() => setOpenSelectPicture(true)}>Adicionar imagem</ButtonPicture> */}
               <label htmlFor="file-input">

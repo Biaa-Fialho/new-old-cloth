@@ -2,6 +2,8 @@ import { useState } from 'react'
 import HeaderSeta from '../../components/Header/HeaderSeta'
 import { MainLogin, TitleContainer, ButtonLogin, Form01, LabelContainer, LabelPasswordConfirm, DivForm, DivContentForm, Input1 } from './style'
 import { useNavigate } from "react-router-dom"
+import { baseUrl } from '../../services/api'
+import axios from 'axios'
 
 function RegisterScreen() {
     const navigate = useNavigate()
@@ -21,7 +23,16 @@ function RegisterScreen() {
                 email : email,
                 senha : senha 
             }
-            console.log(formData)
+
+            axios.post(`${baseUrl}/user/create`, formData)
+                .then(function (response) {
+                    alert("Cadastro realizado com sucesso")
+                    navigate('/login')
+                })
+                .catch(function (error) {
+                    alert("Erro")
+                    console.log(error)
+                });
         }
     }
 

@@ -4,6 +4,8 @@ import HeaderGeneral from '../../components/Header/HeaderSeta'
 import { useState } from 'react'
 // import LoginHeader from '../../components/LoginHeader/LoginHeader'
 // import InputLogin from '../../components/InputLogin/InputLogin'
+import axios from 'axios'
+import { baseUrl } from '../../services/api'
 
 
 function LoginScreen() {
@@ -22,7 +24,18 @@ function LoginScreen() {
                 email : email,
                 senha : senha 
             }
-            console.log(formData)
+
+            axios.post(`${baseUrl}/auth/login`, formData)
+            .then(function (response) {
+                localStorage.setItem('user', response.data.data[0].id)
+                localStorage.setItem('token', response.data.data[0].token)
+                alert("Login realizado com sucesso")
+                navigate('/home')
+            })
+            .catch(function (error) {
+                alert("Erro")
+                console.log(error)
+            });
         }
     }
 

@@ -64,9 +64,9 @@ export const SingleButton = styled.button`
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    &:hover {
+    /* &:hover {
         background-color: #A3D386;
-    }
+    } */
 `
 
 export const SelectButton = styled.button`
