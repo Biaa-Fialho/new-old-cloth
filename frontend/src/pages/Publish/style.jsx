@@ -111,7 +111,6 @@ export const ButtonPicture = styled.button`
 
     width: 80vw;
     height: 35vh;
-    padding-left: 3vw;
     margin-left: 10vw;
 
     background-color: #FFFFFF;

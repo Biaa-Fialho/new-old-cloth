@@ -27,10 +27,12 @@ function LoginScreen() {
 
             axios.post(`${baseUrl}/auth/login`, formData)
             .then(function (response) {
-                localStorage.setItem('user', response.data.data[0].id)
+                localStorage.setItem('user', response.data.data[0].user_id)
                 localStorage.setItem('token', response.data.data[0].token)
                 alert("Login realizado com sucesso")
                 navigate('/home')
+
+                console.log('$$$$$$$$$$$4', response)
             })
             .catch(function (error) {
                 alert("Erro")
