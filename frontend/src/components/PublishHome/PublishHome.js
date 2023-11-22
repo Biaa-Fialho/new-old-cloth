@@ -8,7 +8,8 @@ import ImageSend from "../../assets/send.svg"
 import ImgHeartLike02 from "../../assets/imgHeartLike02.svg"
 import { useState } from "react"
 
-function PublishHome(){
+function PublishHome(props){
+
     const navigate = useNavigate()
 
     const [isLiked, setIsLiked] = useState(false)
@@ -19,10 +20,10 @@ function PublishHome(){
         <DivGeralPublishHome>
             <DivHeader>
                 <ImgBoyPerfilContainer src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
-                <UserName>joao036</UserName>
+                <UserName>{props.userPostNameTop}</UserName>
             </DivHeader>
 
-            <JeansBoy src={JeansBoyPhoto} alt="Homem Branco usando uma calça rasgada jeans e camiseta branca"/>
+            <JeansBoy src={props.imagePost} alt="Homem Branco usando uma calça rasgada jeans e camiseta branca"/>
 
             <FunciotionsDiv>
 
@@ -37,8 +38,8 @@ function PublishHome(){
             </FunciotionsDiv>
 
             <DivLegend>
-                <DivNameLegend>joao036</DivNameLegend>
-                <DivTextLegend>Calça masculina, tamanho 38, lavagem clara e com rasgados </DivTextLegend>
+                <DivNameLegend>{props.userPostName}</DivNameLegend>
+                <DivTextLegend>{props.legendPost}</DivTextLegend>
             </DivLegend>
 
         </DivGeralPublishHome>

@@ -8,6 +8,7 @@ const router = Router();
 // Importar as funções (processamento da requisição) do controller
 const { 
     listUsers,
+    listUserInfos,
     storeUser,
     updateUser,
     deleteUser
@@ -16,6 +17,7 @@ const {
 // Criar os endpoints (rotas) que serão acessados a partir dos métodos HTTP (get,post,put,delete)
 router.get('/users', listUsers);
 router.post('/user/create', storeUser);
+router.get('/user/information/:user_id', listUserInfos);
 router.put('/user/:id', updateUser);
 router.delete('/user/:id', deleteUser);
 

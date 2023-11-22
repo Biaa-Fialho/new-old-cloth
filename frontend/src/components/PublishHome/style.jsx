@@ -41,14 +41,17 @@ export const UserName = styled.div`
 `
 
 export const JeansBoy = styled.img`
-    /* display: flex;
+    display: flex;
     flex-direction: center;
     align-items: flex-start;
-    justify-content: space-between; */
+    justify-content: space-between;
 
     padding-top: 1vh;
-    padding-left: 8vw;
+    padding-left: 5vw;
     padding-right: 4vw;
+
+    width: 90vw;
+    height: 20vh;
 `
 
 export const FunciotionsDiv = styled.div`

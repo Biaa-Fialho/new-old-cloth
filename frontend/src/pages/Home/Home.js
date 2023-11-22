@@ -5,21 +5,22 @@ import FooterB from "../../components/FooterBotton/FooterB"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import { baseUrl } from "../../services/api"
 
 function Home() {
-    const images = 'http://localhost:8000/uploads/'
+    const images = 'http://localhost:3008/uploads/'
     const [userData, setUserData] = useState('');
-
+    
     const navigate = useNavigate()
-
+    
     function goToProfilePage() {
         navigate("/profile");
     }
-
+    
     useEffect(() => {
-        const userId = parseInt(localStorage.getItem("@Auth:user_id"), 10);
-
-        axios.get(`${api.defaults.baseURL}/user/information/${userId}`)
+        const userId = parseInt(localStorage.getItem('user'), 10)
+        
+        axios.get(`${baseUrl}/user/information/${userId}`) //médotodo get para pegar as informções do banco
             .then(response => {
                 const userDataFromServer = response.data;
                 setUserData(userDataFromServer.data);
@@ -31,20 +32,23 @@ function Home() {
 
     // Estado para armazenar os posts
     const [posts, setPosts] = useState([]);
-
+    console.log('+++++posts :', posts);
+    
+    
     useEffect(() => {
         async function fetchPosts() {
             try {
-                const response = await api.get('/post/all');
+                const response = await axios.get(`${baseUrl}/post/all`);
                 setPosts(response.data);
+                console.log('-------------------------------------response :', response);
             } catch (error) {
                 console.error('Erro ao recuperar os posts:', error);
             }
         }
-
+    
         fetchPosts();
     }, []);
-
+    
     return (
         <>
             <HeaderGeral 
@@ -52,11 +56,15 @@ function Home() {
             />
             <DivEscura>
                 <DivClara>
-                    <PublishHome/>
-                    <PublishHome/>
-                    <PublishHome/>
-                    <PublishHome/>
-                    <PublishHome/> 
+                {posts.map((post) => (
+                    <PublishHome
+                        key={post.id_post}
+                        userPostNameTop={post.user_name}
+                        imagePost={images + post.post_image}
+                        userPostName={post.post_legend ? post.user_name : ''}
+                        legendPost={post.post_legend ? post.post_legend : ''}
+                    />
+                ))}
                 </DivClara>
             </DivEscura>
 

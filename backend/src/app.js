@@ -13,6 +13,10 @@ const dotenv = require('dotenv').config();
 // Instanciar o express na variável app
 const app = express();
 
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+app.use('/uploads', express.static(__dirname + '\\public'));
+
 // Habilitar o recebimento de requests em formato JSON
 app.use(express.json());
 // Habilitar o uso dos cors no servidor
