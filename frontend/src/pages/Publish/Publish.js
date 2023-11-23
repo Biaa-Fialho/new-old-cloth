@@ -3,7 +3,7 @@ import FooterB from "../../components/FooterBotton/FooterB";
 import HeaderGeral from "../../components/Header/HeaderGeral";
 import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg";
 import { DivHeader, ContainerGeralButton, SingleButton, UserName, InputLegend, ContainerText, DivGeral, ImgBoyPublish, DivClara, DivInput, ButtonPicture, TextImg, ButtonSave } from "./style";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import SelectPicture from "../../components/SelectPicture/SelectPicture";
 import ConfirmPost from "../../components/ConfirmPost/ConfirmPost";
 import { baseUrl } from "../../services/api";
@@ -16,7 +16,9 @@ function Publish() {
     const [image, setImage] = useState('');
     const [preview, setPreview] = useState('');
     const [selectedImage, setSelectedImage] = useState(null);
-  
+    const images = 'http://localhost:3008/uploads/'
+    const [userData, setUserData] = useState('');
+
     const handleFileChange = (event) => {
       const selectedFile = event.target.files[0];
       setSelectedImage(selectedFile);
@@ -69,7 +71,7 @@ function Publish() {
           <DivClara>
             <DivHeader>
               <ImgBoyPublish src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
-              <UserName>joao036</UserName>
+              <UserName>{userData.user_name}</UserName>
               <ButtonSave onClick={handleButtonClick}>Salvar</ButtonSave>
             </DivHeader>
 

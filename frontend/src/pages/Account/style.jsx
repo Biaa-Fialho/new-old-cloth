@@ -40,7 +40,7 @@ export const DivHeaderAccount = styled.div`
 `
 export const DivImg = styled.img`
     height: 30vh;
-    width: 30vw;
+    width: 40vw;
 
     padding-bottom: 0vh;
 `

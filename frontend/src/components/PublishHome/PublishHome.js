@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { DivGeralPublishHome, DivHeader, DivLegend, DivNameLegend, DivTextLegend, FunciotionsDiv, ImgBoyPerfilContainer, ImgComment, ImgLike, ImgSend, JeansBoy, UserName } from "./style"
-import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg"
+import ImgPerfil from "../../assets/perfilUsuario.png"
 import JeansBoyPhoto from "../../assets/JeansBoy.svg"
 import ImageLike from "../../assets/like.svg"
 import ImageComment from "../../assets/comment.svg"
@@ -19,7 +19,7 @@ function PublishHome(props){
     return(
         <DivGeralPublishHome>
             <DivHeader>
-                <ImgBoyPerfilContainer src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
+                <ImgBoyPerfilContainer src={ImgPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
                 <UserName>{props.userPostNameTop}</UserName>
             </DivHeader>
 

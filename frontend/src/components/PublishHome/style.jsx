@@ -30,6 +30,9 @@ export const ImgBoyPerfilContainer = styled.img`
     padding-left: 3vw;
     padding-top: 1.5vh;
     padding-right: 1vw;
+
+    width: 20vw;
+    height: 10vh;
 `
 
 export const UserName = styled.div`

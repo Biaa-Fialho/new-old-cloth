@@ -3,7 +3,8 @@ const { Router } = require('express');
 // Importar as funções (processamento da requisição) do controller
 const { 
     createPost, 
-    getAllPosts
+    getAllPosts,
+    getUserPost
 } = require('../controllers/postController');
 const router = Router();
 
@@ -11,6 +12,7 @@ const router = Router();
 // Responsável por salvar a imagem localmente.
 const upload = require('../config/multer');
 router.post('/create', upload.single('file'), createPost);
+router.get('/user/:user_id', getUserPost)
 router.get('/all', getAllPosts);
 
 module.exports = router;

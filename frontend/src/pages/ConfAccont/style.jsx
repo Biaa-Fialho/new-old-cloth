@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ImgBoyPerfil from "../../assets/BoyPerfilPhoto.svg"
+import ImgPerfil from "../../assets/perfilUsuario.png"
 
 export const DivClara = styled.div`
     background-color: #deffca;
@@ -56,11 +56,11 @@ export const ButtonSave = styled.button`
     border-radius: 20px;
 `
 export const DivInputSelect = styled.div`
-    background-image: url(${ImgBoyPerfil});
+    background-image: url(${ImgPerfil});
     background-size: cover;
     opacity: 0.6;
-    width: 25vw;
-    height: 25vw;
+    width: 35vw;
+    height: 35vw;
     background-color: #797c7b7e;
 
     color: transparent;
