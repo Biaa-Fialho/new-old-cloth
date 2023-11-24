@@ -14,6 +14,7 @@ function Publish() {
     const [openSelectPicture, setOpenSelectPicture] = useState(false);
     const[openConfirmPost, setOpenConfirmPost] = useState(false);
     const [image, setImage] = useState('');
+    const [legend, setLegend] = useState('');
     const [preview, setPreview] = useState('');
     const [selectedImage, setSelectedImage] = useState(null);
     const images = 'http://localhost:3008/uploads/'
@@ -38,6 +39,7 @@ function Publish() {
         let formData = new FormData();
         formData.append('userId', parseInt(localStorage.getItem('user'), 10));
         formData.append('file', image);
+        formData.append('legend', legend)
     
         axios.post(`${baseUrl}/post/create`, formData)
         .then(function (response) {
@@ -115,7 +117,10 @@ function Publish() {
                   )}
                 </div>
               </label>
-              <InputLegend type="text" placeholder="Adicionar legenda" />
+              <InputLegend 
+                type="text" 
+                placeholder="Adicionar legenda"
+                onChange={(e) => setLegend(e.target.value)} />
             </DivInput>
   
             <SelectPicture

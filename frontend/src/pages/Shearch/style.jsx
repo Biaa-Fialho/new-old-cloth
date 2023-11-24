@@ -28,27 +28,29 @@ export const DivEscura = styled.div`
 
 
 export const GridContainer = styled.div`
-    /* background-color: purple; */
     display: grid;
-    flex-direction: row;
-    /* grid-template-columns: 5vh 80vh; */
+    flex-direction: column;
+    grid-template-columns: 5vh 80vh;
     /* grid-template-rows: 10vw; */
     grid-template-areas: 'ImgLupaSearch InputSearch';
+    width: 100vw;
 `
 export const InputSearch = styled.input`
     grid-area: InputSearch;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-color: #c3e5ad;
+    background-color: #A3D386;
     border: none;
     outline: none;
     border-radius: 30px;
     width: 85vw;
     height: 6vh;
     padding-left: 5vw;
+
+    font-size: large;
 `
 
 export const ImgLupaSearch = styled.img`
@@ -57,4 +59,42 @@ export const ImgLupaSearch = styled.img`
     margin-left: 1vw;
     margin-right: 2vw;
     margin-top: 1vh;
+`
+
+export const DivAccounts = styled.div`
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    margin-left: 16vw;
+    margin-right: 2vw;
+
+    width: 74vw;
+    padding-bottom: 2vh ;
+    background-color: #C8FFA7;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+`
+
+export const DivInside = styled.div`
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 1vh;
+
+    padding-left: 2vw;
+    padding-top: 1.5vh;
+
+    width: 70vw;
+    height: 5vh;
+    
+    background-color: #efffe6;
+
+    border-radius: 30px;
 `
