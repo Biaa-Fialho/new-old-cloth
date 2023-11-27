@@ -15,31 +15,32 @@ function Publish() {
     const[openConfirmPost, setOpenConfirmPost] = useState(false);
     const [image, setImage] = useState('');
     const [legend, setLegend] = useState('');
-    const [preview, setPreview] = useState('');
     const [selectedImage, setSelectedImage] = useState(null);
     const images = 'http://localhost:3008/uploads/'
     const [userData, setUserData] = useState('');
 
+
+    // função que pega o arquivo e envia para as funções  
     const handleFileChange = (event) => {
-      const selectedFile = event.target.files[0];
-      setSelectedImage(selectedFile);
+      const selectedFile = event.target.files[0]; // seleciona o arquivo de imagem
+      setSelectedImage(selectedFile); 
       setImage(selectedFile); // Adicione esta linha para definir o estado image
     }
 
+    //propriedade do react promove as execução do que estirver dentro dela logo que a página abrir 
     useEffect(() => {
       console.log('image', image);
     }, [image]);
-    
-    useEffect(() => {
-      console.log('-------------preview', preview);
-    }, [preview]);
-  
+    //console nas alterações no estado de image 
+     
+
+    // envia as informações para a api 
     const handleSubmit = async () => {
       try {
         let formData = new FormData();
         formData.append('userId', parseInt(localStorage.getItem('user'), 10));
-        formData.append('file', image);
-        formData.append('legend', legend)
+        formData.append('file', image); // pega as alterações do campo img 
+        formData.append('legend', legend) // pega as alterações do campo de legenda 
     
         axios.post(`${baseUrl}/post/create`, formData)
         .then(function (response) {
@@ -55,7 +56,7 @@ function Publish() {
     };
     
     const handleButtonClick = () => {
-      setOpenConfirmPost(true, image, InputLegend);
+      setOpenConfirmPost(true, image, InputLegend); // abre o modal e passa as informações contidas nela 
     };
     
     const handleImageClick = () => {
@@ -72,7 +73,6 @@ function Publish() {
         <DivGeral>
           <DivClara>
             <DivHeader>
-              <ImgBoyPublish src={ImgBoyPerfil} alt="foto homem branco, com cabelo e barba castanho escuro, camiseta cinsa escura e fundo cinza claro " />
               <UserName>{userData.user_name}</UserName>
               <ButtonSave onClick={handleButtonClick}>Salvar</ButtonSave>
             </DivHeader>
@@ -103,7 +103,7 @@ function Publish() {
                           height: '100%',
                           objectFit: 'cover',
                           borderRadius: '10px',
-                        }}
+                        }} // validação do selectImage = se tiver algo no campo ele mostra um previwe da imagem
                       />
                     </ButtonPicture>
                   ) : (

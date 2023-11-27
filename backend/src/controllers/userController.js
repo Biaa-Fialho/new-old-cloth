@@ -195,6 +195,84 @@ async function deleteUser(request, response) {
     });
 }
 
+//pega uma imagem p salvar a imagem de perfil
+async function updateUser(request, response) {
+    if(request.file) {
+        const query = `UPDATE users
+        SET user_name = ?, image = ?
+        WHERE user_id = ?;`;
+        const params = Array(
+            request.body.userEditName,
+            request.file.filename,
+            request.body.userId
+            );
+
+            connection.query(query, params, (err, results) => {
+                console.log('params :', params);
+                console.log('query :', query);
+                    try {
+                        if (results.affectedRows > 0) {
+                            response.status(200).json({
+                                success: true,
+                                message: `Sucesso! Usuário atualizado.`,
+                                data: results
+                            });
+                        } else {
+                            response.status(400).json({
+                                success: false,
+                                message: `Não foi possível realizar a atualização. Verifique os dados informados`,
+                                query: err,
+                                sqlMessage: err
+                            });
+                        }
+                    } catch (e) {
+                        response.status(400).json({
+                            success: false,
+                            message: "Ocorreu um erro. Não foi possível atualizar usuário!",
+                            query: err,
+                            sqlMessage: err
+                        });
+                    }
+                });
+    } else {
+        const query = `UPDATE users
+        SET user_name = ? WHERE user_id = ?;`;
+        const params = Array(
+            request.body.userEditName,
+            request.body.userEditEmail, 
+            request.body.userId
+            );
+
+            connection.query(query, params, (err, results) => {
+                console.log('params :', params);
+                console.log('query :', query);
+                    try {
+                        if (results.affectedRows > 0) {
+                            response.status(200).json({
+                                success: true,
+                                message: `Sucesso! Usuário atualizado.`,
+                                data: results
+                            });
+                        } else {
+                            response.status(400).json({
+                                success: false,
+                                message: `Não foi possível realizar a atualização. Verifique os dados informados`,
+                                query: err,
+                                sqlMessage: err
+                            });
+                        }
+                    } catch (e) {
+                        response.status(400).json({
+                            success: false,
+                            message: "Ocorreu um erro. Não foi possível atualizar usuário!",
+                            query: err,
+                            sqlMessage: err
+                        });
+                    }
+                });
+    }
+}
+
 module.exports = {
     listUsers,
     listUserInfos,

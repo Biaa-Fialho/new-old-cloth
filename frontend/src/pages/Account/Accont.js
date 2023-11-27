@@ -65,7 +65,7 @@ function Accont(){
                     <ConfigAccount isOpen={openConfigAccount} setOpenConfigAccount={()=> setOpenConfigAccount(!openConfigAccount)}/>
                     
                     <DivHeaderAccount>
-                        <DivImg src={ImgPerfil} />
+                        <DivImg src={userData.image ? images + userData.image : ImgPerfil} />
                         <DivTextName>{userData.user_name}</DivTextName>
                     </DivHeaderAccount>
                     <GridContainer>

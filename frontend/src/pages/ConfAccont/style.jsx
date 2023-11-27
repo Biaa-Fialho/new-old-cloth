@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import ImgPerfil from "../../assets/perfilUsuario.png"
 
 export const DivClara = styled.div`
     background-color: #deffca;
@@ -56,12 +55,10 @@ export const ButtonSave = styled.button`
     border-radius: 20px;
 `
 export const DivInputSelect = styled.div`
-    background-image: url(${ImgPerfil});
     background-size: cover;
     opacity: 0.6;
-    width: 35vw;
-    height: 35vw;
-    background-color: #797c7b7e;
+    width: 25vw;
+    height: 25vw;
 
     color: transparent;
     border-radius: 100%;
@@ -70,8 +67,8 @@ export const DivInputSelect = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 25vw;
-    max-height: 25vw;
+    /* max-width: 25vw;
+    max-height: 25vw; */
     /* position: relative; */
 
     margin-left: 37vw;
@@ -95,6 +92,14 @@ export const DivImagens = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 100%;
+    margin-left: 21vw;
+    /* max-width: 25vw;
+    max-height: 25vw; */
+
+    /* background-color: red; */
 `
 export const ImgMedia = styled.img`
     width: 12vw;
@@ -106,17 +111,18 @@ export const ImgMedia = styled.img`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    z-index: 2;
 `
-// export const ImgBoyPerfilContainer = styled.img`
-//     width: 25vw;
-//     height: 25vw;
-//     max-width: 25vw;
-//     max-height: 25vw;
-//     position: relative;
+export const ImgBoyPerfilContainer = styled.img`
 
-//     z-index: 0;
-// `
+    border-radius: 100%;
+
+    width: 100%;
+    height: 100%;
+    background-color: #797c7b7e;
+
+`
 export const LabelContainer = styled.label`
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3vh;

@@ -11,7 +11,7 @@ function Search() {
     const [users, setUsers] = useState([]);
     const [inputValue, setInputValue] = useState('');
 
-    useEffect(() => {
+    useEffect(() => { //pega todos os usuários e envia para user
         axios.get(`${baseUrl}/users`)
             .then(function (response) {
                 const sortedUser = response.data.data.sort((a, b) => {
@@ -28,7 +28,7 @@ function Search() {
     }, []);
 
     const filteredUsers = users.filter((user) =>
-    user.user_name.toLowerCase().includes(inputValue.toLowerCase())
+    user.user_name.toLowerCase().includes(inputValue.toLowerCase()) // filtra, passa o valor de user , transforma o nome em letraminuscula e filtra o valor incluso no input que tu digitou
 );
 
     return (
@@ -48,9 +48,9 @@ function Search() {
                             {(filteredUsers.length !== 0) ?
                                 <DivAccounts>
                                     {filteredUsers.map((user) => ( 
-                                        <DivInside>{user.user_name}</DivInside>
+                                        <DivInside>{user.user_name}</DivInside> 
                                     ))}
-                                </DivAccounts>
+                                </DivAccounts> //se o filteredUsers.length for diferente de 0 ele vai devolver um map com os nomes dos usuários
                                 :
                                 <DivAccounts>
                                     Nenhum usuário encontrado

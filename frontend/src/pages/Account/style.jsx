@@ -41,6 +41,7 @@ export const DivHeaderAccount = styled.div`
 export const DivImg = styled.img`
     height: 30vh;
     width: 40vw;
+    border-radius: 100%;
 
     padding-bottom: 0vh;
 `

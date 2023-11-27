@@ -27,12 +27,10 @@ function LoginScreen() {
 
             axios.post(`${baseUrl}/auth/login`, formData)
             .then(function (response) {
-                localStorage.setItem('user', response.data.data[0].user_id)
-                localStorage.setItem('token', response.data.data[0].token)
+                localStorage.setItem('user', response.data.data[0].user_id) // envia as informações de user no localStorage
+                localStorage.setItem('token', response.data.data[0].token) // valida o login 
                 alert("Login realizado com sucesso")
                 navigate('/home')
-
-                console.log('$$$$$$$$$$$4', response)
             })
             .catch(function (error) {
                 alert("Erro")
@@ -57,9 +55,9 @@ function LoginScreen() {
                         <LabelPassword>Insira sua senha
                             <InputPassword placeholder='' required onChange={(e)=>setSenha(e.target.value)} type='password'/>
                         </LabelPassword>
-                        <LabelPassword>Confirme sua senha
-                            <InputPassword placeholder='' required onChange={(e)=>setConfirmSenha(e.target.value)} type='password'/>
-                        </LabelPassword>
+                        <LabelPassword>Confirme sua senha 
+                            <InputPassword placeholder='' required onChange={(e)=>setConfirmSenha(e.target.value)} type='password'/> 
+                        </LabelPassword> //evento para pegar o valor registrado no input
 
                         <ButtonLogin onClick={login} type="button">Login</ButtonLogin>
                     </Form01>

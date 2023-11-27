@@ -32,7 +32,7 @@ export const ButtonSave = styled.button`
 
     width: 20vw;
     height: 4vh;
-    margin-left: 55vw;
+    margin-left: 70vw;
     margin-top: 0vh;
     margin-bottom: 0vh;
     border-radius: 20px;
